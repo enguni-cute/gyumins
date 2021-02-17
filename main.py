@@ -7,7 +7,7 @@ client = discord.Client()
 async def on_ready():
     print(client.user.id)
     print("준비완료")
-    game = discord.Game("Truckers MP")
+    game = discord.Game("Assetto Corsa")
     await client.change_presence(status=discord.Status.online, activity=game)
 
 @client.event
@@ -23,7 +23,7 @@ async def on_message(message):
     if message.content.startswith("엥구니"):
         await message.channel.send("엥그이")
     if message.content.startswith("ㅇㅋ"):
-        await message.channel.send("ㅇ")
+        await message.channel.send("㉧")
     if message.content.startswith("ㅗ"):
         await message.channel.send("개 빡세.......Ah..")
     if message.content.startswith("규민아"):
@@ -31,7 +31,7 @@ async def on_message(message):
     if message.content.startswith("김규민"):
         await message.channel.send("뭐 씨발 개 븅신년아 라고 재형이가 하래...")
     if message.content.startswith("용재야"):
-        await message.channel.send("너 전용재 ㅋㅋㄹㅃㅃ")
+        await message.channel.send("왜 불러~~")
     if message.content.startswith("규민이 귀여워"):
         await message.channel.send("웅 아니양~~")
     if message.content.startswith("ㅅㄱ"):
@@ -46,7 +46,24 @@ async def on_message(message):
         await message.channel.send("응 니 2.6cm")
     if message.content.startswith("노무현"):
         await message.channel.send("이기야!!!!!!!!!")
-
+    if message.content.startswith("씹년아"):
+        await message.channel.send("뭐 병Sin아")
+    if message.content.startswith("엥기"):
+        await message.channel.send("엥구이!!!!!!!!!!!!!!!!!!")
+    if message.content.startswith("나 잘생겼어?"):
+        await message.channel.send("ㅋㅋ 진짜 차로 뭉개고 싶어")
+    if message.content.startswith("잘생겼다"):
+        await message.channel.send("ㅋ")
+    if message.content.startswith("ㅇ"):
+        await message.channel.send("㉪㉪")
+    if message.content.startswith("시발"):
+        await message.channel.send("욕하네 ㈆ㅣ발")
+    if message.content.startswith("ㅋ"):
+        await message.channel.send("그건 너무 띠껍고")
+    if message.content.startswith("?"):
+        await message.channel.send("뭐 찌질한 새끼야")
+    if message.content.startswith("년아"):
+        await message.channel.send("어쩌라고 ㉪")
 
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
