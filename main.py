@@ -43,8 +43,8 @@ async def on_message(message):
         await message.channel.send("왜 그러고 사니,,")
     if message.content.startswith("좆"):
         await message.channel.send("응 니 2.6cm")
-    if message.content.startswith("ㄴ"):
-        await message.channel.send("ㅁㅎ")
+    if message.content.startswith("노"):
+        await message.channel.send("망난")
     if message.content.startswith("씹년아"):
         await message.channel.send("뭐 병Sin아")
     if message.content.startswith("엥기"):
