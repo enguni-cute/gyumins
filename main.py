@@ -32,8 +32,6 @@ async def on_message(message):
         await message.channel.send("뭐 씨발 개 븅신년아 라고 재형이가 하래...")
     if message.content.startswith("용재야"):
         await message.channel.send("왜 불러~~")
-    if message.content.startswith("규민이 귀여워"):
-        await message.channel.send("웅 아니양~~")
     if message.content.startswith("ㅅㄱ"):
         await message.channel.send("수고")
     if message.content.startswith("어쩌라고"):
@@ -50,20 +48,18 @@ async def on_message(message):
         await message.channel.send("뭐 병Sin아")
     if message.content.startswith("엥기"):
         await message.channel.send("엥구이!!!!!!!!!!!!!!!!!!")
-    if message.content.startswith("나 잘생겼어?"):
-        await message.channel.send("ㅋㅋ 진짜 차로 뭉개고 싶어")
+    if message.content.startswith("ㄴㅁ"):
+        await message.channel.send("응 녬")
     if message.content.startswith("잘생겼다"):
         await message.channel.send("ㅋ")
     if message.content.startswith("ㅇ"):
         await message.channel.send("㉪㉪")
     if message.content.startswith("시발"):
-        await message.channel.send("욕하네 ㈆ㅣ발")
+        await message.channel.send("욕하네 ")
     if message.content.startswith("ㅋ"):
-        await message.channel.send("그건 너무 띠껍고")
+        await message.channel.send("개띠껍네 ㅄ년")
     if message.content.startswith("?"):
         await message.channel.send("뭐 찌질한 새끼야")
-    if message.content.startswith("년아"):
-        await message.channel.send("어쩌라고 ㉪")
 
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
