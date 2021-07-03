@@ -68,7 +68,5 @@ async def on_message(message):
     if message.content.startswith(":underage: **Searching** :mag_right: `오빠들이 좋아하는 헤응 신음소리..♥`")
         await message.channel.send("**Playing** :notes: `오빠들이 좋아하는 헤응 신음소리..♥` - **Now!**")
         
-
-        
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
