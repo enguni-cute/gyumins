@@ -8,7 +8,8 @@ client = discord.Client()
 async def on_ready():
     print(client.user.id)
     print("준비완료")
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="PornHub"))
+    game = discord.Game("김태X와")
+    await client.change_presence(status=discord.Status.online, activity=game)
 
 @client.event
 async def on_message(message):
