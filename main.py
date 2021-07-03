@@ -1,6 +1,9 @@
 import discord
 from discord.utils import get
 import os
+from bs4 import BeautifulSoup
+import urllib
+
 
 client = discord.Client()
 
