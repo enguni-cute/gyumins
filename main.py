@@ -1,9 +1,5 @@
 import discord
-from discord.utils import get
 import os
-from bs4 import BeautifulSoup
-import urllib
-import asyncio
 
 client = discord.Client()
 
@@ -47,7 +43,7 @@ async def on_message(message):
     if message.content.startswith("좆"):
         await message.channel.send("응 니 2.6cm")
     if message.content.startswith("노"):
-        await message.channel.send("망난")
+        await message.channel.send("ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ강인")
     if message.content.startswith("씹년아"):
         await message.channel.send("뭐 병Sin아")
     if message.content.startswith("엥기"):
@@ -62,23 +58,6 @@ async def on_message(message):
         await message.channel.send("욕하네 ")
     if message.content.startswith("?"):
         await message.channel.send("뭐 찌질한 새끼야")
- 
-if ctx.author.voice and ctx.author.voice.channel:
-channel = ctx.author.voice.channel
-await channel.connect()
 
-@app.command(name="참가", pass_context=True)
-async def _join(ctx):
-    if ctx.author.voice and ctx.author.voice.channel:
-        channel = ctx.author.voice.channel
-        await channel.connect()
-    else:
-        await ctx.send("아무도 없잖아 Tq련아")
-await app.voice_clients[0].disconnect()
-        
-@app.command(name="연결끊기")
-async def _leave(ctx):
-    await app.voice_clients[0].disconnect()
-    
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
