@@ -2,3 +2,4 @@ discord.py==1.5.1
 beautifulsoup4==4.9.3
 youtube-dl==2021.6.6
 pyNaCl==1.4.0
+asyncio==3.4.3
