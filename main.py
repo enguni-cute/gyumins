@@ -15,8 +15,8 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith("ㅎㅇ"):
         await message.channel.send("하이")
-    if message.content.startswith("ㅋㅋ"):
-        await message.channel.send("너무 띠껍네..")
+    if message.content.startswith("ㅋㅋㅋㅋㅋㅋㅋㅋㅋ"):
+        await message.channel.send("뭘 빠개 패고싶게")
     if message.content.startswith("야"):
         await message.channel.send("ㅇ")
     if message.content.startswith("씨발"):
@@ -57,8 +57,6 @@ async def on_message(message):
         await message.channel.send("㉪㉪")
     if message.content.startswith("시발"):
         await message.channel.send("욕하네 ")
-    if message.content.startswith("ㅋ"):
-        await message.channel.send("개띠껍네 ㅄ년")
     if message.content.startswith("?"):
         await message.channel.send("뭐 찌질한 새끼야")
         
