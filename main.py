@@ -8,7 +8,6 @@ client = discord.Client()
 async def on_ready():
     print(client.user.id)
     print("준비완료")
-    game = discord.Game("야동 보는중")
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="PornHub"))
 
 @client.event
