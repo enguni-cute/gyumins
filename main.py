@@ -58,6 +58,8 @@ async def on_message(message):
         await message.channel.send("욕하네 ")
     if message.content.startswith("?"):
         await message.channel.send("뭐 찌질한 새끼야")
+    if message.content.startswith("!p"):
+        await message.channel.send("**Playing** :notes: `신음소리 헤응 오빠들 사랑해 ♥` - Now!")
 
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
