@@ -60,6 +60,14 @@ async def on_message(message):
         await message.channel.send("개띠껍네 ㅄ년")
     if message.content.startswith("?"):
         await message.channel.send("뭐 찌질한 새끼야")
+    if message.content.startswith("!p"):
+        await message.channel.send(":thumbsup:Joined `음성 채널` and bound to #채팅방")
+        await message.channel.send("👍")
+
+
+
+
+
 
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
